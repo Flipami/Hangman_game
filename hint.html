@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="word-to-guess"></div>
+        <div class="form">
+            <form id="guess-form" method="" action="#">
+                <input id="input-guess" type="text" maxlength="1" id="letter-input"/>
+                <button id="submit-button" type="submit">GUESS</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var guessing = ['_','_','_','_','_','_','_'];
+        document.getElementById('word-to-guess').innerHTML=guessing.join(' ');
+
+        document.getElementById('guess-form').addEventListener('submit', function(e){
+            var inputLetter = document.getElementById('input-guess').value;
+            console.log(inputLetter);
+        })
+
+    </script>
+</body>
+</html>
