@@ -1,3 +1,92 @@
-html {
-    font: Arial;
+body { 
+    background-color: rgb(165, 204, 93);
+    font-family: 'Gamja Flower';
+    font-size: 40px;
+}
+header {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Gamja Flower';
+    
+}
+h1 {
+    display:flex;
+    justify-content: center;
+    margin:0;
+    font-size: 75px;
+}
+h2 {
+    display:flex;
+    justify-content: center;
+    margin:0;
+    font-size: 55px;
+}
+p, .messages {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:0;
+    font-size: 35px;
+}
+.main, .word-to-guess, .form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#input-guess {
+    height: 75px;
+    width: 350px;
+    font-family: 'Gamja Flower';
+    font-size: 60px;
+}
+#submit-button {
+    background-color:  rgb(135, 207, 2);
+    height: 75px;
+    width: 250px;
+    font-family: 'Gamja Flower';
+    font-size: 60px;
+    border-radius: 15%;
+}
+div.letters {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+button.letter {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Gamja Flower';
+    font-size: 50px;
+    height: 60px;
+    width: 60px;
+    border: 3px black;
+    color:black;
+    border-radius: 50%;
+}
+button:hover {
+    background-color:rgb(135, 207, 2);
+}
+.letter-pressed {
+    background-color: rgb(59, 87, 34);
+    color:darkgray;
+}
+.play-again {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color:  rgb(135, 207, 2);
+    height: 75px;
+    width: 250px;
+    font-family: 'Gamja Flower';
+    font-size: 60px;
+    border-radius: 15%;
+    padding:0;
+    margin:0;
+    border:0;
 }

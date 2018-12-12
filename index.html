@@ -3,27 +3,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rosa´s Hangman</title>
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/scss" href="./style.scss">
+    <title>Rosa´s Hangman - Animals names</title>
 </head>
 <body>
-    <div>
-        <div id="word-to-guess"></div>
+    <header>
+        <h1>Ahorcado</h1>
+        <h2>con nombres de animales</h2>
+        <p>Tienes que ir seleccionando palabras que creas que pueden estar en la palabra que tienes que adivina.<br>
+        Si crees que sabes la palabra, ponla en el recuadro y dale al botón de "guess" para comprobar si has acertado.</p>
+    </header>
+    <div class="main">
+        <div id="word-to-guess"></div><br>
         <div class="form">
             <form id="guess-form" method="" action="#">
                 <input id="input-guess" type="text" maxlength="1" id="letter-input"/>
                 <button id="submit-button" type="submit">GUESS</button>
             </form>
         </div>
+        <section class="messages"></section>
+        <section class="lifes"></section>
+        <div class="letters">
+            <button  class="letter" onclick="input('a')"  id"'"'>a</button>
+            <button  class="letter" onclick="input('b')" id="b">b</button>
+            <button  class="letter" onclick="input('c')" id="c">c</button>
+            <button  class="letter" onclick="input('d')" id="d">d</button>
+            <button  class="letter" onclick="input('e')" id="e">e</button>
+            <button  class="letter" onclick="input('f')" id="f">f</button>
+            <button  class="letter" onclick="input('g')" id="g">g</button>
+            <button  class="letter" onclick="input('h')" id="h">h</button>
+            <button  class="letter" onclick="input('i')" id="i">i</button>
+            <button  class="letter" onclick="input('j')" id="j">j</button>
+            <button  class="letter" onclick="input('k')" id="k">k</button>
+            <button  class="letter" onclick="input('l')" id="l">l</button>
+            <button  class="letter" onclick="input('m')" id="m">m</button>
+            <button  class="letter" onclick="input('n')" id="n">n</button>
+            <button  class="letter" onclick="input('ñ')" id="ñ">ñ</button>
+            <button  class="letter" onclick="input('o')" id="o">o</button>
+            <button  class="letter" onclick="input('p')" id="p">p</button>
+            <button  class="letter" onclick="input('q')" id="q">q</button>
+            <button  class="letter" onclick="input('r')" id="r">r</button>
+            <button  class="letter" onclick="input('s')" id="s">s</button>
+            <button  class="letter" onclick="input('t')" id="t">t</button>
+            <button  class="letter" onclick="input('u')" id="u">u</button>
+            <button  class="letter" onclick="input('v')" id="v">v</button>
+            <button  class="letter" onclick="input('w')" id="w">w</button>
+            <button  class="letter" onclick="input('x')" id="x">x</button>
+            <button  class="letter" onclick="input('y')" id="y">y</button>
+            <button  class="letter" onclick="input('z')" id="z">z</button>
+        </div>
+        <div class="play-again" onclick="prepareGame()"></div>
     </div>
-    <script>
-        var guessing = ['_','_','_','_','_','_','_'];
-        document.getElementById('word-to-guess').innerHTML=guessing.join(' ');
-
-        document.getElementById('guess-form').addEventListener('submit', function(e){
-            var inputLetter = document.getElementById('input-guess').value;
-            console.log(inputLetter);
-        })
-
-    </script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
